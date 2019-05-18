@@ -1,0 +1,129 @@
+page-profil {
+    ion-content {
+        background-image: url("../assets/imgs/bg.jpg");
+        background-size: contain;
+        // background: #f2f2f2 !important;
+    }
+    .inline-logo {
+        display: inline-block;
+    }
+    .inline-logo span {
+        letter-spacing: 8px;
+      }
+    p.tag {
+        font-size: 10px;
+        margin-bottom: 0;
+        margin-top: -3px;
+    }
+    .prabhu {
+        font-size: 8px;
+        letter-spacing: 1px !important;
+        color: #ee8034;
+        margin: 0;
+        font-weight: bolder;
+    }
+    .header-md::after {
+        background: #1f235c;
+    }
+    .bg-merah {
+        width: 100%;
+        padding: 20px 35px;
+        background: #1f235c;
+    }
+    .kotak p {
+        margin: 5px 0;
+    }
+    .bg-merah .judul {
+        font-size: 20px;
+        color: #fff;
+    }
+    .scroll-content {
+        margin-top: 54px !important;
+    }
+    .grid {
+        padding: 5px 40px;
+    }
+    .baris ion-col {
+        text-align: center;
+        padding: 4px;
+    }
+    .baris ion-col .kotak {
+        border: solid 5px #d10000;
+        background: #fff;
+        border-radius: 8px;
+        color: #d10000;
+        padding: 6px;
+    }
+    .baris ion-icon {
+        font-size: 50px;
+        padding-top: 12px;
+    }
+    .content-md {
+        background-color: #f5f5f5;
+    }
+    .item-md h2 {
+        margin: 2px 0;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #1f235b;
+        letter-spacing: 1px;
+    }
+    ion-item.item.item-block.item-md {
+        margin-bottom: 10px;
+        border-radius: 24px;
+        height: 30px;
+    }
+    .grid.atas {
+        margin-top: 0;
+        padding: 10px 35px;
+    }
+    .grid.atas .text {
+        padding-top: 0; 
+    }
+    img.logo-smk {
+        display: inline-grid;
+        height: 82px;
+        margin: 10px 0;
+        padding: 0 !important;
+    }
+    .kop-sekolah {
+        background: #ee8134 !important;
+        text-align: left;
+        padding: 0px 12px !important;
+        font-weight: bold;
+        border-radius: 14px;
+    }
+    .kop-sekolah .text {
+        display: inline-grid;
+        position: absolute;
+        margin-top: 17px;
+        margin-left: 10px;
+        font-size: 27px !important;
+        line-height: 1;
+        color: #1f235c;
+    }
+    .kop-sekolah .text span {
+        letter-spacing: 2px;
+        font-size: 14px;
+        text-align: right;
+        padding-right: 26px;
+    }
+    .kop-sekolah hr {
+        background-color: #1f235c;
+        margin: 2px 0;
+    }
+    .footer {
+        font-size: 11px;
+        margin-top: 69px;
+        text-align: center;
+        color: #fff;
+    }
+    ion-icon.icon.icon-md {
+        font-size: 35px;
+        margin-left: 10px;
+        color: #1f235b
+    }
+    // ion-icon.ion-md-create {
+    //     color: #1f235b;
+    // }
+}

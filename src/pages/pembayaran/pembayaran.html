@@ -1,0 +1,45 @@
+<!--
+  Generated template for the PembayaranPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+      <ion-title>Pembayaran</ion-title>
+      <ion-buttons end>
+        <button ion-button icon-only color="royal">
+          <ion-icon name="more"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+    <div class="tab-wrap">
+        <input type="radio" name="tabs" id="tab1" checked>
+        <div class="tab-label-content" id="tab1-content">
+          <label class="tab-label" for="tab1"><ion-icon name="close-circle" class="top-label"></ion-icon> Belum</label>
+          <div class="tab-content left">
+            <ion-list class="box-bayar">
+                <ion-item *ngFor="let ann of spp">
+                  <div class="nominal">Rp {{ ann.nominal }}</div>
+                  <div class="deskripsi">{{ann.bulan}} {{ann.tahun}}</div>
+                </ion-item>
+              </ion-list>
+          </div>
+        </div>  
+        <input type="radio" name="tabs" id="tab2">
+        <div class="tab-label-content" id="tab2-content">
+          <label class="tab-label" for="tab2"><ion-icon name="checkmark-circle" class="top-label"></ion-icon> Sudah</label>
+          <div class="tab-content right">
+            <ion-list class="box-bayar">
+                <ion-item *ngFor="let ds of sppsudah">
+                  <div class="nominal">Rp {{ ds.nominal }}</div>
+                  <div class="deskripsi">{{ds.bulan}} {{ds.tahun}} - {{ ds.tgl_bayar }}</div>
+                </ion-item>
+              </ion-list>
+          </div>
+        </div>
+        <div class="slide"></div>
+    </div>
+  </ion-content>

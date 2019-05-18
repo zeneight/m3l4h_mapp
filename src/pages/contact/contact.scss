@@ -1,0 +1,138 @@
+page-contact {
+    .card ion-icon.icon.icon-md {
+        font-size: 50px;
+        color: #1f235c;
+    }
+	.header-md::after {
+        background: #1f235c;
+    }
+    .bg-merah {
+        width: 100%;
+        padding: 145px;
+        background: #1f235c;
+        position: absolute;
+        border-radius: 66px;
+    }
+    .tombol {
+        padding: 5px;
+        width: 30%;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 12px;
+    }
+    .scroll-content {
+        margin-top: 0px !important;
+    }
+    .dashboard {
+        text-align: center;
+        z-index: 2;
+        background: unset;
+        margin-top: 50px;
+    }
+    .dashboard h3 {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 14px;
+        color: #fff;
+    }
+    .dashboard p {
+        font-size: 12px;
+        color: #fff;
+    }
+    .foto-profil {
+        border-radius: 55px;
+        border: solid #787cff;
+        width: unset !important;
+        height: 60px !important;
+        margin: 0 auto;
+    }
+    .item-md.item-block .item-inner {
+        border: unset;
+    }
+
+    .bg-style {
+        background: #f2f2f2;
+    }
+    .col {
+        padding: 8px !important;
+    }
+    .card img {
+        height: 35px;
+    }
+    .card {
+        border: solid #787cff;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06), 0 6px 20px 0 rgba(0, 0, 0, 0.06);
+    }
+    
+    .card .text {
+        font-weight: bold;
+        size: 5px;
+        padding-top: 10px;
+        color: #1f235c;
+	}
+	
+
+	
+	.padding-top {
+		padding-top:10px;
+	}
+	.item-md ion-thumbnail ion-img, .item-md ion-thumbnail img {
+		height: auto;
+		width: 50px;
+	}
+	.item-md ion-thumbnail {
+		min-width: 50px;
+	}
+	.no-margin {
+		margin: 0;
+	}
+	.bg-style {
+		background: #f2f2f2;
+	}
+	.bg-white {
+		background: #fff;
+		margin-top: 15px;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 0;
+	}
+	.bg-white-2 {
+		background: #fff;
+		margin-top: 0;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		padding-bottom: 30px;
+	}
+	.header {
+		font-size: 25px;
+		font-weight: bold;
+	}
+	.card.profile {
+		padding: 0;
+	}
+	.card-header{
+		padding-top: 30px;
+		padding-right: 30px;
+		padding-left: 30px;
+		padding-bottom: 10px;
+	}
+	.card-content {
+		text-align: center;	
+	}
+	.card-content span {
+		font-size: 17px;
+	}
+	.float-right {
+		float: right;
+		bottom: 0;
+		font-weight: bold;
+		padding-top: 40px;
+		font-size: 15px;
+	}
+}

@@ -1,0 +1,60 @@
+<!--
+  Generated template for the Pengumuman page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="darkblue">
+		<ion-buttons start>
+			<button id="all-notif-btn" ion-button icon-only (click)="notifikasi()">
+				<ion-icon name="notifications"></ion-icon>
+				<!-- <ion-badge id="all-notif-badge">5</ion-badge> -->
+			</button>
+		</ion-buttons>
+    <ion-title>
+			<div class="inline-logo">
+				<img src="assets/imgs/icons/melah.png" style="height:30px">
+			</div>
+			<div class="inline-logo">
+				<span>MELAH</span>
+				<p class="tag">Mobile Elektronik Sekolah</p>
+				<p class="prabhu">Created by Jenget Prabhu</p>
+			</div>
+		</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+	<!-- <ion-searchbar [(ngModel)]="searchQuery" (input)="searchBerita($event)"></ion-searchbar> -->
+	<ion-searchbar 
+		[(ngModel)]="searchQuery" 
+		(search)="loadAllBySearch($event)" 
+		(ionClear)="loadAllData()"  
+		[showCancelButton]="false" >
+	</ion-searchbar>
+	<!-- <ion-item>
+      <ion-label style="color:black">Kategori</ion-label>
+      <ion-select [(ngModel)]="category" (ionChange)="sortByCategory($event)">
+       
+        <ion-option value="pengumuman">Surat</ion-option>
+      </ion-select>
+    </ion-item> -->
+
+	<ion-card (tap)="itemTapped($event, ann)" *ngFor="let ann of news">
+		<ion-item>
+			<ion-thumbnail item-start>
+					<img *ngIf="ann.gambar" src="{{ann.gambar}}"/>
+					<img *ngIf="!ann.gambar" src="assets/imgs/icons/icon.png"/>
+			</ion-thumbnail>
+			<h2>{{ann.judul}}</h2>
+			<p><small>{{ann.tanggal}}</small></p>
+			<!-- <button ion-button clear item-end>Lihat</button> -->
+		</ion-item>
+	</ion-card>
+	
+	<ion-infinite-scroll (ionInfinite)="doInfinite($event)" id="scrollContent">
+	   <ion-infinite-scroll-content></ion-infinite-scroll-content>
+	</ion-infinite-scroll>
+
+</ion-content>

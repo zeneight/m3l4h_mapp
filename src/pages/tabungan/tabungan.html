@@ -1,0 +1,56 @@
+<!--
+  Generated template for the TabunganPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tabungan</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <div class="judul-saldo">Saldo</div>
+      <div class="nominal-total">
+        <div class="simbol">Rp</div>
+        <div class="jumlah">{{ tabungan.jml_tabungan }}</div>
+      </div>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header class="judul-transaksi">
+      <div class="left">Detail Transaksi</div>
+      <div class="right">Semua <ion-icon name="arrow-dropdown"></ion-icon></div>
+    </ion-list-header>
+    <ion-item *ngFor="let ann of tabungan.transaksi" class="box-transaksi">
+        <div class="wrapper">
+          <div class="ikon">
+            <ion-icon class="warna" *ngIf="ann.tgl_setor" name="arrow-dropup-circle"></ion-icon>
+            <ion-icon class="warna" *ngIf="ann.tgl_tarik" name="arrow-dropdown-circle"></ion-icon>
+          </div>
+          <div class="deskripsi">
+            <div class="tipe warna" *ngIf="ann.tgl_setor">Debit</div>
+            <div class="tipe warna" *ngIf="ann.tgl_tarik">Kredit</div> 
+            
+            <div class="tanggal" *ngIf="ann.tgl_setor">{{ann.tgl_setor}}</div>
+            <div class="tanggal" *ngIf="ann.tgl_tarik">{{ann.tgl_tarik}}</div>
+          </div> 
+          <div class="nominal">
+            <span class="in" *ngIf="ann.nominal_setor">+Rp {{ann.nominal_setor}}</span> 
+            <span class="out" *ngIf="ann.nominal_tarik">-Rp {{ann.nominal_tarik}}</span> 
+          </div>
+        </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

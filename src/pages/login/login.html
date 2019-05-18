@@ -1,0 +1,28 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content *ngIf="!cek" text-center class="bg-login vertical-align-content">
+  <ion-list class="login-pane">
+    <img class="logo" src="assets/imgs/icons/icon.png">
+    <ion-item class="input-bg top">
+      <ion-label class="label" stacked>NIP/NIPD</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.email"></ion-input>
+    </ion-item>
+    <ion-item class="input-bg">
+      <ion-label class="label" stacked>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="userData.password"></ion-input>
+    </ion-item>
+
+    <button ion-button block class="bg-green" (click)="login()">Login</button>
+    <!-- <div class="footer">
+      <div class="wrapper">
+        <div class="bt"><span>Lupa Password</span></div> | <div class="bt"><span>Registrasi</span></div>
+      </div>
+    </div> -->
+  </ion-list>
+</ion-content>
+<page-akunsiswa *ngIf="(cek && tipe == 0)"></page-akunsiswa>
+<page-contact *ngIf="(cek && tipe == 1)"></page-contact>

@@ -1,0 +1,17 @@
+page-pengaturan {
+    ion-item.item.item-block.item-md {
+        padding-left: 0;
+    }
+    ion-content.content.content-md {
+        background: #fff;
+    }
+    .item-inner {
+        margin-left: 2px !important;
+    }
+    ion-list.list ion-icon.icon.icon-md {
+        color: #1f235c;
+    }
+    ion-list.list .label-md {
+        color: #1f235c;
+    }
+}

@@ -1,0 +1,26 @@
+<!--
+  Generated template for the JurusanPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+      <ion-title>Jurusan</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+      <ion-list>
+          <!-- <ion-list-header><ion-icon name="folder" item-start></ion-icon> Senin</ion-list-header> -->
+          <ion-item *ngFor="let ann of item">
+            <ion-thumbnail item-start>
+              <img src="http://melah.smkprshantinilayamkuta.sch.id/img/banner/jurusan/{{ann.logo}}">
+            </ion-thumbnail>
+            {{ann.nama_jurusan}}
+            <p>{{ann.singkatan_jurusan}}</p>
+            <p><small>Ijin: {{ann.ijin_jurusan}}</small></p>
+            <p><span [innerHTML]=ann.penjelasan></span></p>
+          </ion-item>
+        </ion-list>
+  </ion-content>

@@ -1,0 +1,108 @@
+page-akunsiswa {
+    .card ion-icon.icon.icon-md {
+        font-size: 50px;
+        color: #1f235c;
+    }
+    .header-md::after {
+        background: #1f235c;
+    }
+    .bg-merah {
+        width: 100%;
+        padding: 145px;
+        background: #1f235c;
+        position: absolute;
+        border-radius: 66px;
+    }
+    .tombol {
+        padding: 5px;
+        width: 30%;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 12px;
+    }
+    .scroll-content {
+        margin-top: 0px !important;
+    }
+    .dashboard {
+        text-align: center;
+        z-index: 2;
+        background: unset;
+        margin-top: 50px;
+    }
+    .dashboard h3 {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 14px;
+        color: #fff;
+    }
+    .dashboard p {
+        font-size: 12px;
+        color: #fff;
+    }
+    .foto-profil {
+        border-radius: 55px;
+        border: solid #878bfb;
+        width: unset !important;
+        height: 60px !important;
+        margin: 0 auto;
+    }
+    .item-md.item-block .item-inner {
+        border: unset;
+    }
+
+    .bg-style {
+        background: #f2f2f2;
+    }
+    .col {
+        padding: 8px !important;
+    }
+    .card img {
+        height: 35px;
+    }
+    .card {
+        border: solid #1f235c; 
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06), 0 6px 20px 0 rgba(0, 0, 0, 0.06);
+    }
+    
+    .card .text {
+        font-weight: bold;
+        size: 5px;
+        padding-top: 10px;
+        color: #1f235c;
+    }
+
+
+    .grid {
+        padding: 5px 15px !important;
+      }
+      p.tag {
+        font-size: 10px;
+        margin-bottom: 0;
+        margin-top: -3px;
+      }
+    
+      #all-notif-badge {
+        background: #fff;
+        color: #1f235c;
+        position: absolute;
+        top: -4px;
+        left: -14px;
+        border-radius: 20px;
+        font-size: 11px;
+      }
+    
+      .toolbar-title-md {
+        text-align: left;
+      }
+      .menu-utama {
+        text-align: left;
+        font-size: 18px;
+        font-weight: bold;
+        color: #1f235c;
+      }
+}

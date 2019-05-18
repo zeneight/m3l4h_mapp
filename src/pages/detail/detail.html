@@ -1,0 +1,51 @@
+<!--
+  Generated template for the PengumumanDetail page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+	<ion-navbar color="darkblue">
+	  <ion-title>Detail Berita</ion-title>
+	</ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content >
+	  <div>
+		  <ion-item>
+		  <h2>
+			  <strong *ngIf="ann.kategori=='pengumuman'" id="colorNews">Pengumuman</strong>
+			  <strong *ngIf="ann.kategori=='berita'">Berita</strong>
+		  </h2>
+		</ion-item>
+		
+		<img *ngIf="ann.gambar" src="{{ann.gambar}}"/>
+		<ion-card-content>
+		  <ion-card-title>
+			{{ann.judul}}
+				  </ion-card-title>
+		  <div>
+			  <p text-wrap style="text-align:justify;">
+		<span [innerHTML]= 	ann.detail> </span>
+		  </p>
+		  </div>
+			  
+		</ion-card-content>
+		<ion-row>
+		  <ion-col>
+			<button ion-button icon-left clear small>
+			  <div>Post by: {{ann.post_by}}</div>
+			</button>
+		  </ion-col>
+		  <ion-col center text-center>
+			<ion-note>
+			  {{ann.tanggal}}
+			</ion-note>
+		  </ion-col>
+		</ion-row>
+	  </div>
+  </ion-content>
+  

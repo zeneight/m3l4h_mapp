@@ -1,0 +1,430 @@
+page-home {
+  text-align: center;
+
+  ion-content {
+    background-image: url("../assets/imgs/bg.jpg");
+    background-size: contain;
+    // background: #f2f2f2 !important;
+  }
+  .card.profil {
+    border: solid 3px #26a3cc;
+  }
+  .profil .text {
+    color: #fff !important;
+    background: #269abd;
+  }
+  .card.berita {
+    border: solid 3px #d10000;
+  }
+  .berita .text {
+    color: #fff !important;
+    background: #d10000;
+  }
+  .card.ebook {
+    border: solid 3px #34701b;
+  }
+  .ebook .text {
+    color: #fff !important;
+    background: #34701b;
+  }
+  .card.bursa {
+    border: solid 3px #838383;
+  }
+  .bursa .text {
+    color: #fff !important;
+    background: #838383;
+  }
+  .card.ppdb {
+    border: solid 3px #ed882b;
+  }
+  .ppdb .text {
+    color: #fff !important;
+    background: #ed882b;
+  }
+  .card.kontak {
+    border: solid 3px #6e3f90;
+  }
+  .kontak .text {
+    color: #fff !important;
+    background: #6e3f90;
+  }
+
+  .inline-logo {
+    display: inline-block;
+  }
+
+  .header-md::after {
+    background: none;
+  }
+  .bg-merah {
+    width: 100%;
+    padding: 140px;
+    position: absolute;
+    background: #1f235c;
+  }
+  .prabhu {
+    font-size: 8px;
+    letter-spacing: 1px !important;
+    color: #ee8034;
+    margin: 0;
+    font-weight: bolder;
+  }
+
+  .grid.atas {
+    padding: 50px 15px 5px 15px !important;
+  }
+  .grid.atas .text {
+    padding-top: 0; 
+  }
+
+  #all-notif-btn {
+    position: relative;
+  }
+  .grid {
+    padding: 5px 30px 20px 30px !important;
+  }
+  p.tag {
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top: -3px;
+  }
+
+  #all-notif-badge {
+    background: #fff;
+    color: #1f235c;
+    position: absolute;
+    top: -4px;
+    left: -14px;
+    border-radius: 20px;
+    font-size: 11px;
+  }
+
+  .toolbar-title-md {
+    text-align: left;
+  }
+  .menu-utama {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ee8134;
+  }
+  .scroll-content {
+    margin-top: 0 !important;
+  }
+  button.swiper-pagination-bullet {
+    background-color: #1f235c;
+  }
+  ion-slides {
+    height: auto;
+    padding: 0 20px;
+    margin-top: 10px;
+  }
+  ion-slides img {
+    border-radius: 15px;
+  }
+  img.logo-smk {
+    display: inline-grid;
+    height: 82px;
+    margin: 10px 0;
+    padding: 0 !important;
+  }
+  .kop-sekolah {
+    background: #ee8134 !important;
+    text-align: left;
+    padding: 0px 12px !important;
+  }
+  .kop-sekolah .text {
+    display: inline-grid;
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 10px;
+    font-size: 27px !important;
+    line-height: 1;
+    color: #1f235c;
+  }
+  .kop-sekolah .text span {
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 26px;
+  }
+  .kop-sekolah hr {
+    background-color: #1f235c;
+    margin: 2px 0;
+  }
+  .inline-logo span {
+    letter-spacing: 12px;
+  }
+
+  // .bg-style {
+  //   background-image: url("../assets/imgs/bg.jpg");
+  //   background-size: contain;
+  // 	// background: #f2f2f2;
+  // }
+  .bg-red {
+  	background: #1f235c;
+  }
+  .card {
+	  background: #fff;
+	  padding: 0;
+    border-radius: 8px;
+    border: solid 2px #1f235c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06), 0 6px 20px 0 rgba(0, 0, 0, 0.06);
+  }
+  .card img {
+    padding: 10px;
+  }
+  .card .text {
+  	font-weight: bold;
+  	font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .has-refresher > .scroll-content {
+    border-top: 0;
+  }
+
+  .toolbar-title-ios {
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+
+  .footer-ios .toolbar-background-ios,
+  .header-ios .toolbar-background-ios {
+    border-color: transparent;
+    background: transparent;
+  }
+
+  .pollution-sign:before {
+    font-size: 30px;
+  }
+
+  .pollution-time {
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    padding-top: 10px;
+  }
+
+  .pollution-value {
+    font-size: 120px;
+    line-height: 120px;
+    letter-spacing: 4px;
+  }
+  @media (max-width: 355px) {
+    .pollution-value {
+      font-size: 88px;
+      line-height: 88px;
+      letter-spacing: 4px;
+    }
+  }
+
+  .smog {
+    background: url("assets/imgs/clouds.png") 25% 70% repeat-x;
+    height: 35%;
+    width: 200em;
+    position: absolute;
+    z-index: 10;
+    -webkit-animation: cloudLoop 10s linear infinite;
+  }
+
+  .smog.good {
+    -webkit-animation: cloudLoop 65s linear infinite;
+  }
+
+  .smog.mod {
+    -webkit-animation: cloudLoop 60s linear infinite;
+  }
+
+  .smog.unhealthy {
+    -webkit-animation: cloudLoop 35s linear infinite;
+  }
+
+  .smog.vunhealthy {
+    -webkit-animation: cloudLoop 35s linear infinite;
+  }
+
+  .smog.hazardous {
+    -webkit-animation: cloudLoop 35s linear infinite;
+  }
+  @-webkit-keyframes cloudLoop {
+    0% {
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+
+    100% {
+      -webkit-transform: translate3d(-50%,0,0);
+      transform: translate3d(-50%,0,0);
+    }
+  }
+  @keyframes cloudLoop {
+    0% {
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+
+    100% {
+      -webkit-transform: translate3d(-50%,0,0);
+      transform: translate3d(-50%,0,0);
+    }
+  }
+
+  .pollution-back {
+    background: linear-gradient(270deg, #f5071a, #3e0306);
+    background-size: 400% 400%;
+    height: 35%;
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+    position: relative;
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
+  }
+
+  .aqi-status {
+    color: #000000;
+    height: 50%;
+    padding-top: 15px;
+    position: relative;
+  }
+
+  .aqi-extra {
+    position: absolute;
+    bottom: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    max-width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .aqi-readable{
+    position: absolute;
+    width: 100%;
+    margin-top: 110px;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .aqi-graph{
+    width:220px;
+    height:220px;
+  }
+  .pollution-back.good {
+    background: #56ccf2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1f235c, #cc6565);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(270deg, #1f235c, #cc6565);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 400% 400%;
+    margin-bottom: 10px;
+  }
+
+  .aqi-status.good {
+    color: #56ccf2;
+  }
+
+  .pollution-back.mod {
+    background: #F2994A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 400% 400%;
+  }
+
+  .aqi-status.mod {
+    color: #F2994A;
+  }
+
+  .pollution-back.unhealthy {
+    background: #fe8c00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f83600, #fe8c00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 400% 400%;
+  }
+
+  .aqi-status.unhealthy {
+    color: #fe4e00;
+  }
+
+  .pollution-back.vunhealthy {
+    background: #b50518;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b86c67, #b50518);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 400% 400%;
+  }
+
+  .aqi-status.vunhealthy {
+    color: #b50518;
+  }
+
+  .pollution-back.hazardous {
+    background: #610661;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #610661, #a1a5bc);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #610661, #a1a5bc);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 400% 400%;
+  }
+
+  .aqi-status.hazardous {
+    color: #610661;
+  }
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 0 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 0 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0 50%;
+    }
+  }
+}

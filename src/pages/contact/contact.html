@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar hideBackButton>
+    <ion-title></ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" (click)="pengaturan()">
+        <ion-icon name="settings"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-style">
+  <div class="bg-merah"></div>
+  <ion-item class="padding-top dashboard">
+    <ion-thumbnail style="min-height: unset;">
+      <img class="foto-profil" *ngIf="datadosen.foto" src="http://153.92.4.64/img/foto/gurupegawai/{{ datadosen.foto }}">
+      <img class="foto-profil" *ngIf="!datadosen.foto" src="http://153.92.4.64/img/avatar.png">
+    </ion-thumbnail>
+    <h3>{{ name_user }}</h3>
+    <p>{{ datadosen.nip }}</p>
+    <br>
+    <div class="tombol" (click)="openModal({charNum: 0})">
+      <ion-icon name="eye"></ion-icon> 
+      Detail Akun
+    </div>
+  </ion-item>
+
+  <div class="grid">
+		<div class="row responsive-sm">
+			<div class="col">
+				<div class="card" (click)="jadwalMengajar()">
+					<!-- <img src="assets/imgs/icons/berita.png"> -->
+					<ion-icon name="albums"></ion-icon>
+					<div class="text">Jadwal Mengajar</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card" (click)="absensi()">
+					<!-- <img src="assets/imgs/icons/Ebook.png"> -->
+					<ion-icon name="clipboard"></ion-icon>
+					<div class="text">Absensi</div>
+				</div>
+			</div>
+		</div>
+		<div class="row responsive-sm">
+			<div class="col">
+				<div class="card"(click)="jurnalKbm()">
+					<!-- <img src="assets/imgs/icons/bursakerja.png"> -->
+					<ion-icon name="book"></ion-icon>
+					<div class="text">Jurnal KBM</div>
+				</div>
+			</div>
+			<!-- <div class="col">
+				<div class="card" (click)="tabungan()">
+					<img src="assets/imgs/icons/kontak.png">
+					<div class="text">Tabungan</div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+
+</ion-content>

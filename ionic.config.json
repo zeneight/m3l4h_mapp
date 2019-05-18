@@ -1,0 +1,7 @@
+{
+  "name": "stpbi",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

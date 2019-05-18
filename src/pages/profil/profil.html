@@ -1,0 +1,121 @@
+<!--
+  Generated template for the ProfilPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title style="text-align: right;">
+      <div class="inline-logo">
+        <img src="assets/imgs/icons/melah.png" style="height:37px">
+      </div>
+      <div class="inline-logo">
+        <span>MELAH</span>
+        <p class="tag">Mobile Elektronik Sekolah</p>
+        <p class="prabhu">Created by Jenget Prabhu</p>
+      </div>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content >
+
+  <div class="grid atas">
+      <div class="row responsive-sm">
+        <div class="col">
+          <div class="card kop-sekolah">
+            <img class="logo-smk" src="assets/imgs/icons/icon.png">
+            <div class="text">SMK Prshanti Nilayam Kuta<hr><span>MOBILE</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <ion-grid>
+    <ion-list>
+      <ion-item (click)="profile()">
+        <ion-avatar item-left>
+          <!-- <img src="assets/imgs/icons/profile.png"> -->
+          <ion-icon name="create"></ion-icon>
+        </ion-avatar>
+        <h2>Profil</h2>
+      </ion-item>
+      <ion-item (click)="sejarah()">
+        <ion-avatar item-left>
+          <!-- <img src="assets/imgs/icons/sejarah.png"> -->
+          <ion-icon name="list-box"></ion-icon>
+        </ion-avatar>
+        <h2>Sejarah</h2>
+      </ion-item>
+      <ion-item (click)="visimisi()">
+        <ion-avatar item-left>
+          <!-- <img src="assets/imgs/icons/visimisi.png"> -->
+          <ion-icon name="ribbon"></ion-icon>
+        </ion-avatar>
+        <h2>Visi & Misi</h2>
+      </ion-item>
+      <ion-item (click)="jurusan()">
+        <ion-avatar item-left>
+          <!-- <img src="assets/imgs/icons/jurusan.png"> -->
+          <ion-icon name="school"></ion-icon>
+        </ion-avatar>
+        <h2>Jurusan</h2>
+      </ion-item>
+      <ion-item (click)="fasilitas()">
+        <ion-avatar item-left>
+          <!-- <img src="assets/imgs/icons/fasilitas.png"> -->
+          <ion-icon name="trophy"></ion-icon>
+        </ion-avatar>
+        <h2>Fasilitas</h2>
+      </ion-item>
+    </ion-list>
+<!-- 
+    <ion-row class="baris">
+      <ion-col col-4 (click)="profile()">
+        <div class="kotak">
+            <img src="assets/imgs/icons/profile.png">
+          <p>Profil</p>
+        </div>
+      </ion-col>
+      <ion-col col-4 (click)="sejarah()">
+        <div class="kotak">
+          <img src="assets/imgs/icons/sejarah.png">
+          <p>Sejarah</p>
+        </div>
+      </ion-col>
+      <ion-col col-4 (click)="visimisi()">
+        <div class="kotak">
+          <img src="assets/imgs/icons/visimisi.png">
+          <p>Visi & Misi</p>
+        </div>
+      </ion-col>
+      <ion-col col-6 (click)="guru()">
+          <div class="kotak">
+            <ion-icon name="basket"></ion-icon>
+            <p>Guru</p>
+          </div>
+        </ion-col> 
+      <ion-col col-6 (click)="jurusan()">
+        <div class="kotak">
+            <img src="assets/imgs/icons/jurusan.png">
+          <p>Jurusan</p>
+        </div>
+      </ion-col>
+      <ion-col col-6 (click)="fasilitas()">
+        <div class="kotak">
+            <img src="assets/imgs/icons/fasilitas.png">
+          <p>Fasilitas</p>
+        </div>
+      </ion-col>
+       <ion-col col-6 (click)="datalain()">
+        <div class="kotak">
+          <ion-icon name="card"></ion-icon>
+          <p>Data Lain</p>
+        </div>
+      </ion-col> 
+    </ion-row> -->
+
+    <p class="footer">*Informasi dan profil sekolah dapat dilihat dengan cara mengklik submenu.</p>
+    
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,88 @@
+<!--
+  Generated template for the AbsensiPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+      <ion-title>Absensi</ion-title>
+      <ion-buttons end>
+        <button ion-button icon-only color="royal">
+          <ion-icon name="more"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+</ion-header>
+  
+  <ion-content padding>
+    <ion-list class="atas">
+      <ion-item>
+        <div class="judul-saldo">Rekap Absensi Bulan {{ absen.bulan }} {{ absen.tahun }}</div>
+      </ion-item>
+    </ion-list>
+
+    <div class="grid">
+      <div class="row responsive-sm">
+        <div class="col">
+          <div class="card">
+            <h1>{{ absen.masuk }}</h1>
+            <span>kali</span>
+            <div class="text">Hadir</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <h1>{{ absen.tidak_masuk }}</h1>
+            <span>kali</span>
+            <div class="text">Tidak Hadir</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ion-list class="detail-absensi">
+      <ion-list-header class="judul-transaksi">
+        <div class="left">Informasi tidak hadir</div>
+        <div class="right"></div>
+      </ion-list-header>
+      <ion-item>
+        <ion-icon name="people" item-start></ion-icon>
+        <b>{{ absen.dispensasi }}</b> kali Dispensasi
+      </ion-item>
+      <ion-item>
+        <ion-icon name="people" item-start></ion-icon>
+        <b>{{ absen.sakit }}</b> kali Sakit
+      </ion-item>
+      <ion-item>
+        <ion-icon name="people" item-start></ion-icon>
+        <b>{{ absen.ijin }}</b> kali Ijin
+      </ion-item>
+      <ion-item>
+        <ion-icon name="people" item-start></ion-icon>
+        <b>{{ absen.alpha }}</b> kali Tanpa Keterangan
+      </ion-item>
+    </ion-list>
+  
+    <ion-list>
+      <ion-list-header class="judul-transaksi">
+        <div class="left">Riwayat Absensi</div>
+        <div class="right"></div>
+      </ion-list-header>
+      <ion-item *ngFor="let ann of absen.detail_masuk">
+        <h4><b>{{ ann.hari }}, {{ ann.tanggal }}</b></h4>
+        <p>
+          Keterangan:
+          <span *ngIf="ann?.alasan"><b>{{ ann.alasan }}</b></span>
+          <span *ngIf="(ann.alasan == null && ann.keterangan == 0)"><b>Tanpa Keterangan</b></span>
+          <span *ngIf="(ann.alasan == null && ann.keterangan == 1)"><b>Hadir</b></span>
+          <br>
+          Jam Datang: <b>{{ ann.jam_datang }}</b><br>
+          Jam Pulang: <b>{{ ann.jam_pulang }}</b><br>
+          Tidak Mengikuti Mapel: <b>-</b><br>
+
+        </p>
+      </ion-item>
+    </ion-list>
+  
+  </ion-content>

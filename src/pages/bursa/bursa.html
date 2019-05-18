@@ -1,0 +1,41 @@
+<!--
+  Generated template for the Ikal page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="darkblue">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Bursa Kerja</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content style="background-color:#DCDCDC;">
+
+<ion-item>
+  <ion-label>Kategori</ion-label>
+  <ion-select [(ngModel)]="category" (ionChange)="loadAllData()">
+    <ion-option value="all">All</ion-option>
+    <ion-option value="Lowongan">Lowongan</ion-option>
+    <ion-option value="Beasiswa">Beasiswa</ion-option>
+  </ion-select>
+</ion-item>
+
+<ion-list>
+  <ion-item *ngFor="let ann of ikalData" (tap)="itemTapped($event, ann)">
+    <ion-thumbnail item-left>
+      <img src={{ann.logo}}>
+    </ion-thumbnail>
+    <h3>{{ann.judul}}</h3>
+    <p>{{ann.created_at}}</p>
+    <span *ngIf="ann.kategori=='Beasiswa'" class="labelBlue">{{ann.kategori}}</span>
+    <span *ngIf="ann.kategori=='Lowongan'" class="labelGreen">{{ann.kategori}}</span>
+    <ion-icon name="md-arrow-dropright-circle" clear item-right></ion-icon>
+  </ion-item>  
+</ion-list>
+
+</ion-content>

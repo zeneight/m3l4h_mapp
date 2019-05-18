@@ -1,0 +1,103 @@
+<ion-header>
+	<ion-toolbar>
+	  <ion-buttons start>
+		<button id="all-notif-btn" ion-button icon-only (click)="notifikasi()">
+			<ion-icon name="notifications"></ion-icon>
+			<ion-badge id="all-notif-badge">*</ion-badge>
+	  	</button>
+	  </ion-buttons>
+	  <ion-title>
+		<div class="inline-logo">
+			<img src="assets/imgs/icons/melah.png" style="height:37px">
+		</div>
+		<div class="inline-logo">
+			<span>MELAH</span>
+			<p class="tag">Mobile Elektronik Sekolah</p>
+			<p class="prabhu">Created by Jenget Prabhu</p>
+		</div>
+	</ion-title>
+	  <!-- <ion-buttons end>
+		<button ion-button icon-only color="royal">
+		  <ion-icon name="more"></ion-icon>
+		</button>
+	  </ion-buttons> -->
+	</ion-toolbar>
+  </ion-header>
+
+<ion-content  class="bg-style">
+	<div class="bg-merah"></div>
+	<div class="grid atas">
+		<div class="row responsive-sm">
+			<div class="col">
+				<div class="card kop-sekolah">
+					<img class="logo-smk" src="assets/imgs/icons/icon.png">
+					<div class="text">SMK Prshanti Nilayam Kuta<hr><span>MOBILE</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<ion-slides *ngIf="items && items.length" autoplay="5000" loop="true" speed="500" pager="true">
+		<ion-slide *ngFor="let item of items">
+			<div class="slider">
+				<img src="{{item.gambar}}">
+			</div>
+		</ion-slide>
+	</ion-slides>
+	
+	<div class="grid">
+		<div class="row responsive-sm">
+			<div class="col">
+				<div class="text menu-utama"><ion-icon name="apps"></ion-icon> Menu Utama</div>
+			</div>
+		</div>
+		<div class="row responsive-sm">
+			<div class="col">
+				<div class="card profil" (click)="Profile()">
+					<img src="assets/imgs/icons/profil.png">
+					<div class="text">Profil</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card berita" (click)="list()">
+					<img src="assets/imgs/icons/berita.png">
+					<div class="text">Berita</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card ebook" (click)="EBook()">
+					<img src="assets/imgs/icons/ebook.png">
+					<div class="text">E-Book</div>
+				</div>
+			</div>
+		</div>
+		<div class="row responsive-sm">
+			<div class="col">
+				<div class="card bursa"(click)="Bursa()">
+					<img src="assets/imgs/icons/bursa.png">
+					<div class="text">Bursa</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card ppdb" (click)="PMB()">
+					<img src="assets/imgs/icons/ppdb.png">
+					<div class="text">PPDB</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card kontak" (click)="kontak()">
+					<img src="assets/imgs/icons/kontak.png">
+					<div class="text">Kontak</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="aqi-status good">
+	<div class="aqi-readable">GOOD</div>
+	<div class="chart-container">
+	<canvas #barCanvas class="aqi-graph" style="height:250px">
+	</canvas>
+	</div>
+	</div> -->
+</ion-content>

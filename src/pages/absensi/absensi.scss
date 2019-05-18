@@ -1,0 +1,133 @@
+page-absensi {
+    ion-title {
+        text-align: center;
+    }
+    ion-list.atas, .atas ion-label {
+        margin: 0 !important;
+    }
+    .item-md {
+        padding-left: 0 !important;
+    }
+
+    .card img {
+        height: 35px;
+    }
+    .card {
+        border: solid #1f235c; 
+        background: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06), 0 6px 20px 0 rgba(0, 0, 0, 0.06);
+    }
+    
+    .card .text {
+        font-weight: bold;
+        size: 5px;
+        padding-top: 10px;
+        color: #1f235c;
+    }
+
+    .detail-absensi ion-icon {
+        margin: 0 !important;
+    }
+    .detail-absensi ion-item .item-inner {
+        margin-left: 14px !important;
+    }
+
+    h1 {
+        font-size: 60px;
+        line-height: 1;
+        margin: 0;
+        display: inline;
+    }
+
+    .ikon ion-icon {
+        font-size: 38px;
+    }
+    .wrapper .ikon, .wrapper .deskripsi, .wrapper .nominal {
+        display: table-cell;
+    }
+    .wrapper .ikon {
+        width: 15%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .wrapper .deskripsi {
+        width: 60%;
+    }
+    .wrapper .nominal {
+        width: 25%;
+    }
+    .wrapper {
+        display: table;
+        width: 100%;
+    }
+    .tanggal {
+        font-size: 11px;
+        color: #716f6f;
+    }
+    .tipe {
+        font-size: 18px;
+        padding-bottom: 2px;
+    }
+    .tanggal {
+        font-size: 11px;
+    }
+    .box-transaksi {
+        padding-left: 0;
+    }
+    .wrapper .nominal span {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .wrapper .nominal {
+        text-align: right;
+        vertical-align: middle;
+    }
+    .in {
+        color: #21b307;
+    }
+    .out {
+        color: #ff0000;
+    }
+    .warna {
+        color: #1f235c;
+    }
+
+    ion-list-header.judul-transaksi.item.item-md.list-header.list-header-md {
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+    ion-label.label.label-md {
+        width: 100%;
+        display: table;
+    }
+    .left {
+        display: table-cell;
+    }
+    .right {
+        display: table-cell;
+        text-align: right;
+    }
+    .judul-saldo {
+        text-align: center;
+        background: #1f235c;
+        border-radius: 50px;
+        padding: 5px;
+        color: #fff;
+        margin: 0 auto;
+    }
+    .simbol {
+        display: inline-grid;
+        vertical-align: top;
+        font-size: 20px;
+    }
+    .jumlah {
+        display: inline-grid;
+        font-size: 45px;
+    }
+    .nominal-total {
+        text-align: center;
+    }
+}
