@@ -5,6 +5,8 @@ import { Validators, FormBuilder } from '@angular/forms';
 import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 import { LoadingController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
+import { Observable } from 'rxjs/Observable';
+import { HttpClient } from '@angular/common/http';
 
 import { NotifikasiPage } from '../notifikasi/notifikasi';
 
@@ -28,19 +30,35 @@ export class AboutPage {
   allData: any=[];
   allBySearch: any=[];
 
+  jmlNotifikasi: number;
+
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams, 
     private formBuilder: FormBuilder, 
     private newsService: AuthServiceProvider,
     public loadingCtrl: LoadingController,
-    public toastCtrl: ToastController
+    public toastCtrl: ToastController,
+    public http: HttpClient,
   ) {
 
     this.searchQuery = "";
     this.page = 0;
     this.loadAllData();
+    this.getNotif();
   
+  }
+  ionViewDidEnter() {
+    this.getNotif();
+  }
+
+  getNotif(){
+    let url = "http://153.92.4.64/api/notifikasi/jumlah";
+    let data: Observable<any> = this.http.get(url);
+    data.subscribe(result => {
+      this.jmlNotifikasi = result.data.jumlah;
+      // console.log(result.data);
+    })
   }
 
   notifikasi(){

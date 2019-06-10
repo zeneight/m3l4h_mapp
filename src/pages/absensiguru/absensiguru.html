@@ -6,17 +6,29 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>Absen Siswa</ion-title>
-    <ion-buttons end>
+    <ion-title>Absen Siswa {{ datarombel.nama_rombel }}</ion-title>
+    <!-- <ion-buttons end>
       <button ion-button icon-only color="royal">
         <ion-icon name="more"></ion-icon>
       </button>
-    </ion-buttons>
+    </ion-buttons> -->
   </ion-navbar>
-
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content>
+  <ion-list *ngIf="(cek != 0)">
+    <ion-item text-wrap *ngFor="let item of datasiswa">
+      <span>{{ item.get_siswa.nama }}</span><br>
+      <small>{{ item.nis }}</small>
+      <b *ngIf="(item.keterangan == 1)" (tap)="showRadio(item)" item-end><small>Sudah Absen</small></b>
+      <b *ngIf="(item.keterangan == 0)" (tap)="showRadio(item)" item-end><small>Tidak Absen</small></b>
+    </ion-item>
+  </ion-list>
+  <ion-card *ngIf="(cek == 0)">
+    <ion-card-content>
+      <p>Data Absensi hari ini belum diambil, silahkan klik tombol untuk mengambil absen!</p>
+      <br>
+      <button padding ion-button block (click)="ambilData(datarombel)">Ambil Data Absen</button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

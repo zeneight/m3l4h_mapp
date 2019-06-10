@@ -25727,6 +25727,16 @@ page-about ion-thumbnail img {
   border-radius: 40px;
 }
 
+page-about #all-notif-badge {
+  background: #ff0000;
+  color: #ffffff;
+  position: absolute;
+  top: -4px;
+  left: -14px;
+  border-radius: 20px;
+  font-size: 11px;
+}
+
 page-about .label h2 {
   font-weight: bold;
   font-size: 18px;
@@ -25937,7 +25947,7 @@ page-absensi .nominal-total {
 }
 
 page-absensiguru ion-title {
-  text-align: center;
+  text-align: left;
 }
 
 page-akunsiswa .card ion-icon.icon.icon-md {
@@ -26317,7 +26327,7 @@ page-home .header-md::after {
 
 page-home .bg-merah {
   width: 100%;
-  padding: 140px;
+  padding: 50px;
   position: absolute;
   background: #1f235c;
 }
@@ -26343,7 +26353,7 @@ page-home #all-notif-btn {
 }
 
 page-home .grid {
-  padding: 5px 30px 20px 30px !important;
+  padding: 5px 15px 20px 15px !important;
 }
 
 page-home p.tag {
@@ -26353,8 +26363,8 @@ page-home p.tag {
 }
 
 page-home #all-notif-badge {
-  background: #fff;
-  color: #1f235c;
+  background: #ff0000;
+  color: #ffffff;
   position: absolute;
   top: -4px;
   left: -14px;
@@ -26367,8 +26377,8 @@ page-home .toolbar-title-md {
 }
 
 page-home .menu-utama {
-  text-align: left;
-  font-size: 18px;
+  text-align: center;
+  font-size: 20px;
   font-weight: bold;
   color: #ee8134;
 }
@@ -26402,6 +26412,7 @@ page-home .kop-sekolah {
   background: #ee8134 !important;
   text-align: left;
   padding: 0px 12px !important;
+  margin-top: 12px;
 }
 
 page-home .kop-sekolah .text {
@@ -26757,6 +26768,128 @@ page-jadwalpelajaran .guru {
   color: #8e8e8e;
 }
 
+page-kepsek-inventaris ion-title {
+  text-align: center;
+}
+
+page-kepsek-inventaris ion-icon.top-label {
+  margin-right: 5px;
+}
+
+page-kepsek-inventaris .header-md::after {
+  background: #1f235c !important;
+  border-top: #1f235c solid;
+}
+
+page-kepsek-inventaris .tab-wrap {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 4px;
+  -webkit-box-shadow: -1px 1px 3px 0px #bbb;
+  box-shadow: -1px 1px 3px 0px #bbb;
+}
+
+page-kepsek-inventaris input[type="radio"][name="tabs"] {
+  position: absolute;
+  z-index: -1;
+}
+
+page-kepsek-inventaris input[type="radio"][name="tabs"]:checked + .tab-label-content .tab-label {
+  color: #ee8034;
+  /* border-left: #ddd solid 1px; */
+  /* border-right: #ddd solid 1px; */
+  font-weight: 500;
+  background-color: #1f235c;
+}
+
+page-kepsek-inventaris input[type="radio"][name="tabs"]:checked + .tab-label-content .tab-content {
+  display: block;
+}
+
+page-kepsek-inventaris input[type="radio"][name="tabs"]:nth-of-type(1):checked ~ .slide {
+  left: calc((100% / 2) * 0);
+}
+
+page-kepsek-inventaris input[type="radio"][name="tabs"]:nth-of-type(2):checked ~ .slide {
+  left: calc((100% / 2) * 1);
+}
+
+page-kepsek-inventaris input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {
+  left: 0;
+}
+
+page-kepsek-inventaris .tab-label {
+  cursor: pointer;
+  color: #fff;
+  background-color: #1f235c;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  height: 56px;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  width: 100%;
+}
+
+page-kepsek-inventaris .slide {
+  background: #ee8034;
+  width: calc(100% / 2);
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 2px);
+  -webkit-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out;
+}
+
+page-kepsek-inventaris .tab-label-content {
+  width: 100%;
+}
+
+page-kepsek-inventaris .tab-label-content .tab-content {
+  position: absolute;
+  top: 58px;
+  line-height: 130%;
+  display: none;
+}
+
+page-kepsek-inventaris .tab-content.right, page-kepsek-inventaris .tab-content.left {
+  width: 100%;
+  left: 0;
+}
+
+page-kepsek-inventaris .item-md {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+page-kepsek-inventaris .box-bayar .nominal {
+  font-size: 18px;
+  color: #ef7521;
+  padding-bottom: 4px;
+}
+
+page-kepsek-inventaris .box-bayar .deskripsi {
+  font-size: 13px;
+  color: #828282;
+}
+
 page-kontak a {
   text-decoration: none;
 }
@@ -26884,6 +27017,26 @@ page-login .input-bg {
 
 page-login .label {
   color: #fff !important;
+}
+
+page-notifikasi ion-title {
+  text-align: center;
+}
+
+page-notifikasi .text-bold {
+  font-weight: bolder;
+  color: #f58634;
+}
+
+page-notifikasi ion-thumbnail img {
+  border-radius: 40px;
+  height: 40px !important;
+  width: auto !important;
+}
+
+page-notifikasi .item-md ion-thumbnail {
+  min-width: unset;
+  min-height: unset;
 }
 
 page-pembayaran ion-title {

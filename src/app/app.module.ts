@@ -50,6 +50,9 @@ import { PengaturanPage } from '../pages/pengaturan/pengaturan';
 import { AplikasiPage } from '../pages/aplikasi/aplikasi';
 import { FaqPage } from '../pages/faq/faq';
 import { AbsensiguruPage } from '../pages/absensiguru/absensiguru';
+import { KepsekInventarisPage } from '../pages/kepsek-inventaris/kepsek-inventaris';
+import { AkunkepsekPage } from '../pages/akunkepsek/akunkepsek';
+import { PushProvider } from '../providers/pushProvider';
 
 @NgModule({
   declarations: [
@@ -86,7 +89,9 @@ import { AbsensiguruPage } from '../pages/absensiguru/absensiguru';
     PengaturanPage,
     AplikasiPage,
     FaqPage,
-    AbsensiguruPage
+    AbsensiguruPage,
+    KepsekInventarisPage,
+    AkunkepsekPage
   ],
   imports: [
     BrowserModule, HttpModule,HttpClientModule,
@@ -128,15 +133,17 @@ import { AbsensiguruPage } from '../pages/absensiguru/absensiguru';
     PengaturanPage,
     AplikasiPage,
     FaqPage,
-    AbsensiguruPage
+    AbsensiguruPage,
+    KepsekInventarisPage,
+    AkunkepsekPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthServiceProvider,
-    OneSignal,
-    ProfilePage
+    PushProvider,
+    OneSignal
   ]
 })
 export class AppModule {}

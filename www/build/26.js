@@ -1,14 +1,14 @@
 webpackJsonp([26],{
 
-/***/ 716:
+/***/ 719:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BeritaDetailPageModule", function() { return BeritaDetailPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BursaDetailPageModule", function() { return BursaDetailPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__berita_detail__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bursa_detail__ = __webpack_require__(172);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var BeritaDetailPageModule = /** @class */ (function () {
-    function BeritaDetailPageModule() {
+var BursaDetailPageModule = /** @class */ (function () {
+    function BursaDetailPageModule() {
     }
-    BeritaDetailPageModule = __decorate([
+    BursaDetailPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__berita_detail__["a" /* BeritaDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_2__bursa_detail__["a" /* BursaDetailPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__berita_detail__["a" /* BeritaDetailPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__bursa_detail__["a" /* BursaDetailPage */]),
             ],
         })
-    ], BeritaDetailPageModule);
-    return BeritaDetailPageModule;
+    ], BursaDetailPageModule);
+    return BursaDetailPageModule;
 }());
 
-//# sourceMappingURL=berita-detail.module.js.map
+//# sourceMappingURL=bursa-detail.module.js.map
 
 /***/ })
 

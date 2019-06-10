@@ -58,7 +58,7 @@ page-home {
   }
   .bg-merah {
     width: 100%;
-    padding: 140px;
+    padding: 50px;
     position: absolute;
     background: #1f235c;
   }
@@ -81,7 +81,7 @@ page-home {
     position: relative;
   }
   .grid {
-    padding: 5px 30px 20px 30px !important;
+    padding: 5px 15px 20px 15px !important;
   }
   p.tag {
     font-size: 10px;
@@ -90,8 +90,8 @@ page-home {
   }
 
   #all-notif-badge {
-    background: #fff;
-    color: #1f235c;
+    background: #ff0000;
+    color: #ffffff;
     position: absolute;
     top: -4px;
     left: -14px;
@@ -103,8 +103,8 @@ page-home {
     text-align: left;
   }
   .menu-utama {
-    text-align: left;
-    font-size: 18px;
+    text-align: center;
+    font-size: 20px;
     font-weight: bold;
     color: #ee8134;
   }
@@ -132,6 +132,7 @@ page-home {
     background: #ee8134 !important;
     text-align: left;
     padding: 0px 12px !important;
+    margin-top: 12px;
   }
   .kop-sekolah .text {
     display: inline-grid;

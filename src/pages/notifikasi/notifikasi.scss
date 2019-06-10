@@ -1,3 +1,18 @@
 page-notifikasi {
-
+    ion-title {
+        text-align: center;
+    }
+    .text-bold {
+        font-weight: bolder;
+        color: #f58634;
+    }
+    ion-thumbnail img {
+        border-radius: 40px;
+        height:40px !important;
+        width:auto !important;
+    }
+    .item-md ion-thumbnail {
+        min-width: unset;
+        min-height: unset;
+    }
 }

@@ -64,6 +64,7 @@ export class LoginPage {
 				let datanya = JSON.parse(resp);
 				if(datanya.role=="siswa") this.tipe = 0;
 				else if(datanya.role=="guru") this.tipe = 1;
+				else if(datanya.role=="kepsek") this.tipe = 2;
 				console.log(this.tipe);
 				this.loading.dismiss();
 			}
@@ -111,7 +112,6 @@ export class LoginPage {
 			this.presentToast("e-mail/password tidak boleh kosong!");
 		}
 	}
-
 	presentToast(msg) {
 		let toast = this.toastCtrl.create({
 			message: msg,
